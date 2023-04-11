@@ -1,0 +1,88 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@font-face {
+  font-family: Trenda;
+  src: url("Trenda.ttf");
+}
+
+body {
+  background-color: white;
+  font-family: Trenda, serif;
+}
+.navbar {
+  width: 89%;
+  border-bottom: 0.5px solid #000000;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.navbar a {
+  size: 20px;
+  margin: 10px;
+}
+
+.hoverNav {
+  position: relative;
+}
+.hoverNav::after{
+  opacity: 0;
+  transition: all 0.5s;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.hoverNav:hover::after {
+  opacity: 1;
+}
+
+.carsHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.carsHeader_{
+  font-size: 50px;
+}
+.carsUnderline {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+img{
+  z-index: 501;
+}
+.DHCard {
+  height: 7rem;
+}
+.cardIcon2 {
+  position: relative;
+  bottom: 10px;
+  padding: 5px 6px 5px 4px;
+  font-size: 25px;
+  width: 57px;
+  background-color: white;
+  z-index: 500;
+}
+.DHList {
+  width: 65%;
+}
+.point {
+  font-size: 18px;
+}
+
+
+
+
+.editUnderline {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 2px;
+}
+
+.editUnderline:hover {
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}

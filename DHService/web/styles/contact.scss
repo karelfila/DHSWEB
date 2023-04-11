@@ -1,0 +1,79 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@font-face {
+  font-family: Trenda;
+  src: url("Trenda.ttf");
+}
+
+body {
+  background-color: white;
+  font-family: Trenda, serif;
+}
+
+.navbar {
+  width: 89%;
+  border-bottom: 0.5px solid #000000;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar a {
+  size: 20px;
+  margin: 10px;
+}
+
+.hoverNav {
+  position: relative;
+}
+
+.hoverNav::after {
+  opacity: 0;
+  transition: all 0.5s;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hoverNav:hover::after {
+  opacity: 1;
+}
+
+.contactHeader {
+  margin-top: 150px;
+  height: 25vh;
+}
+
+.contactHeader_ {
+  font-size: 50px;
+}
+
+.underLine {
+  border-bottom: 1px solid black;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
+.underLine:focus {
+  outline: none;
+}
+
+.form-control:active {
+  box-shadow: none;
+}
+
+.zprava {
+  height: 90px;
+}
+.borderLeft {
+  border-right: 2px solid black;
+}
+.contactForm {
+  margin-top: 3vh;
+  border-right: 2px solid black;
+  padding-right: 9vh;
+}

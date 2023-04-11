@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="web/styles/contact.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+<body>
+
+<!-- Navigace -->
+<div class="d-flex justify-content-around">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white stroke">
+        <div class="container-fluid d-flex justify-content-between">
+            <div>
+                <a class="navbar-brand hoverNav" href="home.html">DH SERVICES</a>
+            </div>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link hoverNav text-black" href="about.html">O NÁS</a>
+                        <a class="nav-link hoverNav text-black active" href="cars.html">DOVOZ AUT</a>
+                        <a class="nav-link hoverNav text-black" href="cleaning.html">ÚKLID</a>
+                        <a class="nav-link hoverNav text-black" href="#">KONTAKT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Navigace -->
+
+<!-- Contact -->
+<section class="mb-4 container">
+
+
+    <div class="d-flex justify-content-around">
+        <div class="text-center contactHeader">
+            <h1 class="contactHeader_">Kontaktujte nás</h1>
+            <p class="text-center w-responsive mx-auto mb-0 mt-3">Máte nějaké otázky? Neváhejte a kontaktujte nás.</p>
+        </div>
+    </div>
+
+    <div class="row">
+
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 contactForm">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-2">
+                            <label for="name" class=""></label>
+                            <input type="text" id="name" name="name" class="form-control rounded-0 underLine"
+                                   placeholder="Jméno a příjmení">
+
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-2">
+                            <label for="email" class=""></label>
+                            <input type="text" id="email" name="email" class="form-control rounded-0 underLine"
+                                   placeholder="Váš email">
+
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-2">
+                            <label for="subject" class=""></label>
+                            <input type="text" id="subject" name="subject" class="form-control rounded-0 underLine"
+                                   placeholder="Předmět">
+
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <label for="message"></label>
+                            <textarea type="text" id="message" name="message" rows="2"
+                                      class="form-control md-textarea rounded-0 underLine zprava"
+                                      placeholder="Vaše zpráva"></textarea>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-end text-md-left">
+                <a class="btn btn-primary mt-3 rounded-0" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+
+
+        <div class="col-md-3 text-center">
+
+            <div class="list-unstyled">
+
+                <a class="text-decoration-none text-black" target="_blank"
+                   href="https://www.google.com/maps/place/Husovo+n%C3%A1m.+175%2F17,+289+22+Lys%C3%A1+nad+Labem/@50.2013307,14.8418981,17z/data=!3m1!4b1!4m6!3m5!1s0x470bf7bf23738c2b:0xd10c7f28e7fbf7e3!8m2!3d50.2013307!4d14.8418981!16s%2Fg%2F11cs7j76m_">
+                    <div class="icon1">
+                        <img src="2.png" height="64" width="61" class="mb-3">
+                    </div>
+                    <p class="m-0 mb-4">Husovo nám. 175/17, 289 22 <br>Lysá nad Labem</p> 
+                </a>
+
+                <a class="text-decoration-none text-black" Href="tel:+420-607-753-698">
+                    <div class="icon2">
+                        <img src="1.png" height="48" width="61" class="m-2">
+                    </div>
+                    <p class="mb-4">+420 607 753 698</p>
+                </a>
+
+
+                <a class="text-decoration-none text-black mt-4" href="mailto:info@absolut-estate.cz">
+                    <div class="d-flex justify-content-center icon3">
+                        <img src="3.png" height="38" width="61" class="m-2">
+                    </div>
+                    <p>info@absolut-estate.cz</p>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@font-face {
+  font-family: Trenda;
+  src: url("Trenda.ttf");
+}
+
+body {
+  background-color: white;
+  font-family: Trenda, serif;
+}
+.navbar {
+  width: 89%;
+  border-bottom: 0.5px solid #000000;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.navbar a {
+  size: 20px;
+  margin: 10px;
+}
+
+.hoverNav {
+  position: relative;
+}
+.hoverNav::after{
+  opacity: 0;
+  transition: all 0.5s;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.hoverNav:hover::after {
+  opacity: 1;
+}
+
+.cleaningHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.cleaningHeader_{
+  font-size: 50px;
+}
+
+.cleaningHeaderUnderline {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+.cards {
+  gap: 6rem !important;
+}
+img{
+  z-index: 501;
+}
+.cardIcon {
+  position: relative;
+  bottom: 38px;
+  padding: 15px;
+  font-size: 25px;
+  width: 57px;
+  background-color: white;
+  z-index: 500;
+}
+.cardIcon2 {
+  position: relative;
+  bottom: 38px;
+  padding-bottom: 15px;
+  padding-left: 14px;
+  padding-top: 15px;
+  padding-right: 16px;
+  font-size: 25px;
+  width: 57px;
+  background-color: white;
+  z-index: 500;
+}
+.card1 {
+  height: 195px;
+}
+
+.card2 {
+
+}
+
+.gardenHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13vh;
+  margin-bottom: 6vh;
+}
+.gardeHeader_{
+  font-size: 35px;
+}
+
+.garden {
+  width: 90%;
+  font-size: 20px;
+  padding-top: 25px;
+}
+.garden2 {
+  width: 70%;
+  font-size: 15px;
+}
+
+.packageHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 6vh;
+}
+.packageHeader_{
+  font-size: 35px;
+}
+.packageTitle {
+  font-size: 25px;
+}
+.packages {
+  gap: 7rem;
+}
+
+
+
+.editUnderline {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 2px;
+}
+
+.editUnderline:hover {
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+.icons {
+  width: 11%;
+  transition: 1s;
+}
+.icons:hover{
+  content: '';
+  color: black;
+}
+
