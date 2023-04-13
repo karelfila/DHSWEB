@@ -11842,11 +11842,15 @@ body {
 }
 
 .infoCard {
-  width: 35% !important;
+  width: 70vh !important;
+  margin-bottom: 3rem;
 }
 
 .infoCardDiv {
   height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .editUnderline {
@@ -11884,6 +11888,41 @@ body {
 
 .cardHeader {
   font-size: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+  .infoCardDiv {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .infoCardDiv {
+    height: 130vh;
+  }
+
+  .infoCard {
+    margin: 50px;
+  }
+
+  .infoCard1 {
+    margin-top: 8rem;
+  }
+
+  .navIcon {
+    font-size: 40px;
+  }
+
+  .navbar a {
+    font-size: 27px;
+  }
+
+  .DHSHeader {
+    display: none;
+  }
+
+  .cardHeader {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

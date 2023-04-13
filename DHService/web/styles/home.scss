@@ -1,4 +1,5 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 @font-face {
   font-family: Trenda;
   src: url("Trenda.ttf");
@@ -8,6 +9,7 @@ body {
   background-color: white;
   font-family: Trenda, serif;
 }
+
 .navbar {
   width: 89%;
   border-bottom: 0.5px solid #000000;
@@ -15,6 +17,7 @@ body {
   top: 0;
   z-index: 9999;
 }
+
 .navbar a {
   size: 20px;
   margin: 10px;
@@ -23,7 +26,8 @@ body {
 .hoverNav {
   position: relative;
 }
-.hoverNav::after{
+
+.hoverNav::after {
   opacity: 0;
   transition: all 0.5s;
   content: '';
@@ -34,11 +38,10 @@ body {
   bottom: 0;
   left: 0;
 }
+
 .hoverNav:hover::after {
   opacity: 1;
 }
-
-
 
 
 .DHSHeader {
@@ -53,11 +56,17 @@ body {
 }
 
 .infoCard {
-  width: 35% !important;
+  width: 70vh !important;
+  margin-bottom: 3rem
 }
+
 .infoCardDiv {
   height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
 .editUnderline {
   border-bottom: 1px solid #ffffff;
   padding-bottom: 2px;
@@ -74,6 +83,7 @@ body {
   padding-bottom: 2px;
   transition: 0.1s;
 }
+
 .moreInfo:hover {
   content: '';
   padding-bottom: 4px;
@@ -84,7 +94,8 @@ body {
   width: 11%;
   transition: 1s;
 }
-.icons:hover{
+
+.icons:hover {
   content: '';
   color: black;
 }
@@ -93,6 +104,34 @@ body {
   font-size: 30px;
 }
 
+@media screen and (max-width: 1280px) {
+
+  .infoCardDiv {
+    height: 100vh;
+  }
+}
 
 
-
+@media screen and (max-width: 900px) {
+  .infoCardDiv {
+    height: 130vh;
+  }
+  .infoCard {
+    margin: 50px;
+  }
+  .infoCard1 {
+    margin-top: 8rem;
+  }
+  .navIcon {
+    font-size: 40px;
+  }
+  .navbar a {
+    font-size: 27px;
+  }
+  .DHSHeader {
+    display: none;
+  }
+  .cardHeader {
+    font-size: 20px;
+  }
+}

@@ -12,6 +12,6 @@ if(isset( $_POST['subject']))
   $content="From: $name \n Email: $email \n Message: $message";
   $recipient = "karelfila05@gmail.com";
   $mailheader = "From: $email \r\n";
-  mail($recipient, $subject, $content, $mailheader) or die("Omlouváme se ale něco se nepovedlo! Zkuste prosím znovu později .");
+  mail($recipient, $subject, $content, $mailheader) or die("Omlouváme se ale něco se nepovedlo! Zkuste prosím znovu později.");
   echo "Email byl odeslán! Děkujeme!";
 ?>
