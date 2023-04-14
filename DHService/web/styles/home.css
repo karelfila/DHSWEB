@@ -11890,6 +11890,55 @@ body {
   font-size: 30px;
 }
 
+.box {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+  padding: 5px;
+  border: 2px solid black;
+}
+.box:before, .box:after {
+  content: "•";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: black;
+  border: 2px solid black;
+  line-height: 12px;
+  top: 5px;
+  text-align: center;
+}
+.box:before {
+  left: 5px;
+}
+.box:after {
+  right: 5px;
+}
+.box .box-inner {
+  position: relative;
+  border: 2px solid black;
+  padding: 40px;
+}
+.box .box-inner:before, .box .box-inner:after {
+  content: "•";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: black;
+  border: 2px solid black;
+  line-height: 12px;
+  bottom: -2px;
+  text-align: center;
+}
+.box .box-inner:before {
+  left: -2px;
+}
+.box .box-inner:after {
+  right: -2px;
+}
+
 @media screen and (max-width: 1280px) {
   .infoCardDiv {
     height: 100vh;
@@ -11922,6 +11971,10 @@ body {
 
   .cardHeader {
     font-size: 20px;
+  }
+
+  .navHamburger:after {
+    display: none;
   }
 }
 

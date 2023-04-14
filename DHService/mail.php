@@ -3,11 +3,10 @@
   $name = $_POST['name'];
   if(isset( $_POST['email']))
   $email = $_POST['email'];
-if(isset( $_POST['subject']))
+  if(isset( $_POST['subject']))
   $subject = $_POST['subject'];
   if(isset( $_POST['message']))
   $message = $_POST['message'];
-
 
   $content="From: $name \n Email: $email \n Message: $message";
   $recipient = "karelfila05@gmail.com";
