@@ -6,21 +6,23 @@
 }
 
 body {
-  background-color: white;
-  font-family: Trenda, serif;
+  background-color: #ebebee;
+  font-family: Gill Sans MT, serif;
 }
 
 .navbar {
-  width: 89%;
-  border-bottom: 0.5px solid #000000;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 9999;
+  padding: 0;
 }
 
 .navbar a {
   size: 20px;
   margin: 10px;
+  color: white;
+  font-family: Trenda, serif;
 }
 
 .hoverNav {
@@ -33,7 +35,7 @@ body {
   content: '';
   height: 1px;
   width: 100%;
-  background-color: black;
+  background-color: white;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -43,28 +45,49 @@ body {
   opacity: 1;
 }
 
+.NAVHeader_ {
+  height: 30px;
+  width: 70px;
+}
 
 .DHSHeader {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 85vh;
 }
 
-.DHSHeader_ {
-  font-size: 60px;
+.arrowDiv {
+  height: 12vh;
 }
 
 .infoCard {
-  width: 70vh !important;
-  margin-bottom: 3rem
+  width: 652px;
+  height: 402px;
+  margin-left: 7.5vh;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  z-index: 300;
+}
+
+.infoCard1 {
+  margin-bottom: 385px;
+}
+
+.infoCardImg1 {
+
+}
+
+.infoCardImg1Div {
+  position: relative;
+  top: 25px;
+  right: -475px;
+  z-index: -1;
 }
 
 .infoCardDiv {
-  height: 50vh;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  height: 130vh;
+  display: block;
 }
 
 .editUnderline {
@@ -101,70 +124,22 @@ body {
 }
 
 .cardHeader {
-  font-size: 30px;
-}
-
-
-.box {
-  background-color: rgba(#000, 0.5);
-  width: 100%;
-  max-width: 600px;
-  padding: 5px;
-  border: 2px solid black;
-  &:before, &:after {
-    content: "•";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    font-size: 14px;
-    color: black;
-    border: 2px solid black;
-    line-height: 12px;
-    top: 5px;
-    text-align: center;
-  }
-  &:before {
-    left: 5px;
-  }
-  &:after {
-    right: 5px;
-  }
-  .box-inner {
-    position: relative;
-    border: 2px solid black;
-    padding: 40px;
-    &:before, &:after {
-      content: "•";
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      font-size: 14px;
-      color: black;
-      border: 2px solid black;
-      line-height: 12px;
-      bottom: -2px;
-      text-align: center;
-    }
-    &:before {
-      left: -2px;
-    }
-    &:after {
-      right: -2px;
-    }
-  }
+  font-size: 25px;
+  margin-bottom: 3rem;
 }
 
 
 
 @media screen and (max-width: 1280px) {
 
-  .infoCardDiv {
-    height: 100vh;
-  }
 }
 
 
 @media screen and (max-width: 900px) {
+  .NAVHeader_ {
+    height: 60px;
+    width: 140px;
+  }
   .infoCardDiv {
     height: 130vh;
   }
@@ -175,7 +150,7 @@ body {
     margin-top: 8rem;
   }
   .navIcon {
-    font-size: 40px;
+    font-size: 35px;
   }
   .navbar a {
     font-size: 27px;
