@@ -172,13 +172,13 @@ body {
 
 .mobileImg1 {
   position: relative;
-  top: -270px;
+  top: -230px;
   z-index: -1;
   left: 47px;
 }
 .mobileImg2 {
   position: relative;
-  top: -230px;
+  top: -200px;
   left: 47px;
   z-index: -1;
 }
@@ -191,14 +191,14 @@ body {
   font-family: Trenda, serif;
   font-size: 10px;
   position: relative;
-  bottom: -60px;
+  bottom: -100px;
 }
 .moreInfoMobile2 {
   color: #1c2645;
   font-family: Trenda, serif;
   font-size: 10px;
   position: relative;
-  bottom: -100px;
+  bottom: -130px;
 }
 .moreInfoMobile:hover {
   color: #1c2645;
@@ -226,6 +226,9 @@ body {
   .DHSHeader_ {
     height: 154.625px;
     width: 359.625px;
+  }
+  .DHSHeader {
+    height: 80vh;
   }
   .infoCardMobile {
     display: block;
