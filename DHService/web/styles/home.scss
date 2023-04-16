@@ -48,13 +48,19 @@ body {
 .NAVHeader_ {
   height: 30px;
   width: 70px;
+
 }
 
 .DHSHeader {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 95vh;
+}
+
+.DHSHeader_ {
+  height: 309.25px;
+  width: 719.25px;
 }
 
 .arrowDiv {
@@ -70,23 +76,43 @@ body {
   z-index: 300;
 }
 
+
 .infoCard1 {
-  margin-bottom: 385px;
+  margin-top: 0;
+}
+.infoCard2 {
+  margin-top: 0;
 }
 
-.infoCardImg1 {
+.cardHeaderDiv{
+  width: 652px;
+  margin-left: 7.5vh;
+  margin-bottom: 1vh;
+}
 
+.cardHeader {
+  color: #1c2645;
+  font-size: 30px;
+  font-family: Trenda, serif;
+}
+
+.infoCard1Div {
+  height: 95vh;
+}
+.infoCard2Div {
+  height: 85vh;
 }
 
 .infoCardImg1Div {
   position: relative;
-  top: 25px;
-  right: -475px;
-  z-index: -1;
+  top: -220px;
+  right: -495px;
+  z-index: 20;
+  width: 652px;
 }
 
 .infoCardDiv {
-  height: 130vh;
+  height: 180vh;
   display: block;
 }
 
@@ -101,17 +127,20 @@ body {
 }
 
 .moreInfo {
-  color: black;
-  border-bottom: 1px solid black;
-  padding-bottom: 2px;
-  transition: 0.1s;
+  color: #1c2645;
+  margin-bottom: 0.5vh;
+  font-family: Trenda, serif;
+  font-size: 20px;
+}
+
+.arrow {
+    transform: rotate(270deg);
 }
 
 .moreInfo:hover {
-  content: '';
-  padding-bottom: 4px;
-  color: black;
+  color: #1c2645;
 }
+
 
 .icons {
   width: 11%;
@@ -123,15 +152,84 @@ body {
   color: black;
 }
 
-.cardHeader {
-  font-size: 25px;
-  margin-bottom: 3rem;
+.infoCardPar {
+  font-size: 17px;
+  padding-top: 5vh;
+  height: 70%;
+  width: 60%;
 }
 
+.infoCardMobile {
+  display: none;
+}
 
+.infoCardParMobile {
+  font-size: 11px;
+  padding: 3vh;
+  height: 70%;
+  width: 350px;
+}
+
+.mobileImg1 {
+  position: relative;
+  top: -270px;
+  z-index: -1;
+  left: 47px;
+}
+.mobileImg2 {
+  position: relative;
+  top: -230px;
+  left: 47px;
+  z-index: -1;
+}
+.mobileCard {
+  height: 414px;
+  width: 400px;
+}
+.moreInfoMobile1 {
+  color: #1c2645;
+  font-family: Trenda, serif;
+  font-size: 10px;
+  position: relative;
+  bottom: -60px;
+}
+.moreInfoMobile2 {
+  color: #1c2645;
+  font-family: Trenda, serif;
+  font-size: 10px;
+  position: relative;
+  bottom: -100px;
+}
+.moreInfoMobile:hover {
+  color: #1c2645;
+}
+.arrowMobile {
+  transform: rotate(270deg);
+  margin-right: 4rem;
+}
+
+.cardHeaderDivMobile{
+  width: 400px;
+  margin-bottom: 1vh;
+}
+
+.cardHeaderMobile {
+  color: #1c2645;
+  font-size: 20px;
+  font-family: Trenda, serif;
+}
 
 @media screen and (max-width: 1280px) {
-
+  .infoCardDiv {
+    display: none;
+  }
+  .DHSHeader_ {
+    height: 154.625px;
+    width: 359.625px;
+  }
+  .infoCardMobile {
+    display: block;
+  }
 }
 
 
@@ -140,28 +238,17 @@ body {
     height: 60px;
     width: 140px;
   }
-  .infoCardDiv {
-    height: 130vh;
-  }
-  .infoCard {
-    margin: 50px;
-  }
-  .infoCard1 {
-    margin-top: 8rem;
-  }
+
   .navIcon {
     font-size: 35px;
+    border: 2px black;
+    border-radius: 3px;
+    background-color: #ebebee;
   }
   .navbar a {
     font-size: 27px;
   }
-  .DHSHeader {
-    display: none;
-  }
-  .cardHeader {
-    font-size: 20px;
-  }
-  .navHamburger:after {
-    display:none;
+  .infoCardMobile {
+    display: block;
   }
 }
