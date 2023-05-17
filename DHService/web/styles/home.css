@@ -11794,7 +11794,7 @@ textarea.form-control-lg {
 }
 body {
   background-color: #ebebee;
-  font-family: Gill Sans MT, serif;
+  font-family: Trenda, serif;
 }
 
 .navbar {
@@ -11849,8 +11849,16 @@ body {
   width: 719.25px;
 }
 
+.addHeader {
+  font-size: 16.5px;
+  padding-top: 6vh;
+  width: 719.25px;
+  font-weight: 300 !important;
+}
+
 .arrowDiv {
   height: 12vh;
+  width: 75%;
 }
 
 .infoCard {
@@ -11878,16 +11886,17 @@ body {
 
 .cardHeader {
   color: #1c2645;
-  font-size: 30px;
+  font-size: 29.5px;
   font-family: Trenda, serif;
+  width: 100%;
 }
 
 .infoCard1Div {
-  height: 95vh;
+  height: 85vh;
 }
 
 .infoCard2Div {
-  height: 85vh;
+  height: 95vh;
 }
 
 .infoCardImg1Div {
@@ -11928,9 +11937,20 @@ body {
   color: #1c2645;
 }
 
+.cardHeaderPar {
+  font-size: 15px;
+  padding-left: 6.5vh;
+  width: 90%;
+  letter-spacing: 0.3px;
+}
+
 .icons {
   width: 11%;
   transition: 1s;
+}
+
+.facebook {
+  width: 4.5vh;
 }
 
 .icons:hover {
@@ -11940,9 +11960,16 @@ body {
 
 .infoCardPar {
   font-size: 17px;
-  padding-top: 5vh;
   height: 70%;
   width: 60%;
+  padding-top: 2vh;
+}
+
+.infoCardPar2 {
+  font-size: 17px;
+  height: 70%;
+  width: 60%;
+  padding-top: 7.5vh;
 }
 
 .infoCardMobile {
@@ -11954,19 +11981,21 @@ body {
   padding: 3vh;
   height: 70%;
   width: 350px;
+  position: relative;
+  top: 35px;
 }
 
 .mobileImg1 {
   position: relative;
   top: -230px;
   z-index: -1;
-  left: 47px;
+  margin-left: 4vh;
 }
 
 .mobileImg2 {
   position: relative;
   top: -200px;
-  left: 47px;
+  margin-left: 4vh;
   z-index: -1;
 }
 
@@ -11980,7 +12009,7 @@ body {
   font-family: Trenda, serif;
   font-size: 10px;
   position: relative;
-  bottom: -100px;
+  bottom: -124px;
 }
 
 .moreInfoMobile2 {
@@ -11988,7 +12017,7 @@ body {
   font-family: Trenda, serif;
   font-size: 10px;
   position: relative;
-  bottom: -130px;
+  bottom: -154px;
 }
 
 .moreInfoMobile:hover {
@@ -12001,13 +12030,21 @@ body {
 }
 
 .cardHeaderDivMobile {
-  width: 400px;
+  width: 380px;
   margin-bottom: 1vh;
 }
 
 .cardHeaderMobile {
   color: #1c2645;
   font-size: 20px;
+  font-family: Trenda, serif;
+}
+
+.footerText {
+  color: #ebebee;
+}
+
+.footerHeader {
   font-family: Trenda, serif;
 }
 
@@ -12022,11 +12059,33 @@ body {
   }
 
   .DHSHeader {
-    height: 80vh;
+    height: 93vh;
   }
 
   .infoCardMobile {
     display: block;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .addHeader {
+    padding-top: 6vh;
+    width: 359.625px;
+    font-size: 17px;
+  }
+
+  .cardHeaderMobile {
+    color: #1c2645;
+    font-size: 15px;
+    font-family: Trenda, serif;
+    position: relative;
+    right: -15px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -12037,17 +12096,41 @@ body {
 
   .navIcon {
     font-size: 35px;
-    border: 2px black;
-    border-radius: 3px;
-    background-color: #ebebee;
+    background-color: transparent;
+    border: 0;
   }
 
   .navbar a {
-    font-size: 27px;
+    font-size: 20px;
   }
 
   .infoCardMobile {
     display: block;
+  }
+
+  .cardHeaderMobile {
+    color: #1c2645;
+    font-size: 15px;
+    font-family: Trenda, serif;
+    position: relative;
+    right: -15px;
+  }
+
+  .infoCardParMobile {
+    position: relative;
+    left: -6px;
+    top: 45px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .infoCardParMobile {
+    position: relative;
+    left: -6px;
+    top: 45px;
+  }
+
+  .mobileCard {
+    margin-left: 1.5vh;
   }
 }
 

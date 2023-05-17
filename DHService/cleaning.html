@@ -6,233 +6,333 @@
     <link rel="stylesheet" href="web/styles/cleaning.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body class="">
 
 <!-- Navigace -->
 <div class="d-flex justify-content-around">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white stroke">
-        <div class="container-fluid d-flex justify-content-between">
-            <div>
-                <a class="navbar-brand hoverNav" href="home.html">DH SERVICES</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white stroke">
+        <div class="container-fluid d-flex justify-content-between" style="background-color: #1c2645">
+            <div class="ms-3">
+                <a class="navbar-brand active" href="home.html">
+                    <img src="NavLogo.png" width="69.4" height="35.9">
+                </a>
             </div>
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <div class="text-end">
+                <button class="navbar-toggler m-2 border-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon navIcon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse me-3" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link hoverNav text-black" href="about.html">O NÁS</a>
-                        <a class="nav-link hoverNav text-black" href="cars.html">DOVOZ AUT</a>
-                        <a class="nav-link hoverNav text-black active" href="#">ÚKLID</a>
-                        <a class="nav-link hoverNav text-black" href="contact.html">KONTAKT</a>
+                        <a class="nav-link hoverNav text-white" href="about.html">O&nbsp&nbspN&nbspÁ&nbspS</a>
+                        <a class="nav-link hoverNav text-white" href="cars.html">A&nbspU&nbspT&nbspA</a>
+                        <a class="nav-link hoverNav text-white" href="cleaning.html">N E M O V I T O S T I</a>
+                        <a class="nav-link hoverNav text-white" href="contact.html">K O N T A K T</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 </div>
-
 <!-- Navigace -->
 
 <div class="d-flex justify-content-center align-items-center cleaningHeader">
-    <h1 class="cleaningHeader_ ">Služby pro Vaši domácnost</h1>
+    <div>
+        <h1 class="cleaningHeader_ ">s l u ž b y&nbsp&nbspp r o&nbsp&nbspv a š e&nbsp&nbspn e m o v i t o s t i</h1>
+        <h5 class="text-center mt-5"></h5>
+        <h5 class="text-center mt-5 cleaningHeader_Price fst-italic">ceny již od 990 kč</h5>
+    </div>
+</div>
+
+
+<div class="text-center arrowDiv" id="arrowDiv">
+    <a href="#arrowDiv">
+        <img src="arrow.png" height="15" width="15.6">
+    </a>
 </div>
 
 <!-- Služby -->
 
-<div class="spectrum container d-flex flex-wrap cards justify-content-around">
+<div class="text-center mb-5 chill">
 
-    <div class="card card1 text-center border border-dark rounded-0 shadow-sm p-3 mb-2 bg-body rounded" style="width: 18rem;">
-        <div><i class="fa-solid fa-broom cardIcon border border-dark rounded-circle shadow-sm bg-body rounded"></i>
+    <p class="cardHeader">Naše spektrum nabízených služeb je opravdu široké. <br>
+        V oblasti úklidových služeb nabízíme:
+    </p>
+
+</div>
+<div class="spectrum container d-flex flex-wrap cards">
+
+
+    <div class="card card1 text-center rounded-0 border-0 d-flex justify-content-around" style="">
+        <div class="inCard">
+            <img src="jednoraz.png" width="125.38" height="125.38">
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Jednorázový, pravidelný či generální úklid</h5>
-        </div>
-    </div>
-    <div class="card card1 text-center border border-dark rounded-0 shadow-sm p-3 mb-2 bg-body rounded" style="width: 18rem;">
-        <div><img class="cardIcon border border-dark rounded-circle shadow-sm bg-body rounded" src="window.png">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Mytí oken a žaluzií</h5>
-        </div>
-    </div>
-    <div class="card card1 text-center border border-dark rounded-0 shadow-sm p-3 mb-2 bg-body rounded" style="width: 18rem;">
-        <div>
-            <img class="cardIcon border border-dark rounded-circle shadow-sm bg-body rounded" src="vacuum-cleaner.png">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Extrakční čištění čalounění</h5>
+        <div class="card-body cardTitleDiv">
+            <h5 class="card-title cardTitle" style="text-align:center">jednorázový, pravidelný nebo generální
+                úklid</h5>
         </div>
     </div>
-    <div class="card card1 text-center border border-dark rounded-0 shadow-sm p-3 mb-1 bg-body rounded" style="width: 18rem;">
-        <div>
-            <i class="fa-solid fa-house-circle-check cardIcon2 border border-dark rounded-circle shadow-sm bg-body rounded"></i>
+
+    <div class="card card1 text-center rounded-0 border-0 d-flex justify-content-around" style="">
+        <div class="inCard">
+            <img src="okno.png" width="125.38" height="125.38">
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Příprava a úklid před prodejem, pronájmem či prezentací nemovitosti</h5>
-        </div>
-    </div>
-    <div class="card card1 text-center border border-dark rounded-0 shadow-sm p-3 mb-1 bg-body rounded" style="width: 18rem;">
-        <div>
-            <i class="fa-solid fa-screwdriver-wrench cardIcon border border-dark rounded-circle shadow-sm bg-body rounded"></i>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Úklid po rekonstrukci, malování či před kolaudací nemovitosti</h5>
+        <div class="card-body cardTitleDiv">
+            <h5 class="card-title cardTitle text-center" style="text-align:center">mytí oken a žaluzií</h5>
         </div>
     </div>
-    <div class="card card1 text-center border border-dark rounded-0 shadow-sm p-3 mb-1 bg-body rounded" style="width: 18rem;">
-        <div><i class="fa-solid fa-road cardIcon2 border border-dark rounded-circle shadow-sm bg-body rounded"></i>
+
+    <div class="card card1 text-center rounded-0 border-0 d-flex justify-content-around" style="">
+        <div class="inCard">
+            <img src="lux.png" width="125.38" height="125.38">
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Mytí venkovních ploch, chodníků, zámkových dlažeb, venkovního nábytku atp.</h5>
+        <div class="card-body cardTitleDiv">
+            <h5 class="card-title cardTitle" style="text-align:center">extrakční čištění čalounění</h5>
         </div>
     </div>
+
+    <div class="card card1 text-center rounded-0 border-0 d-flex justify-content-around" style="">
+        <div class="inCard">
+            <img src="priprava.png" width="125.38" height="125.38">
+        </div>
+        <div class="card-body cardTitleDiv">
+            <h5 class="card-title cardTitle" style="text-align:center">příprava a úklid před prodejem, pronájmem nebo
+                prezentací nemovitosti</h5>
+        </div>
+    </div>
+
+    <div class="card card1 text-center rounded-0 border-0 d-flex justify-content-around" style="">
+        <div class="inCard">
+            <img src="rekonstrukce.png" width="125.38" height="125.38">
+        </div>
+        <div class="card-body cardTitleDiv">
+            <h5 class="card-title cardTitle" style="text-align:center">úklid po rekonstrukci, malování či před
+                kolaudací nemovitosti</h5>
+        </div>
+    </div>
+
+    <div class="card card1 text-center rounded-0 border-0 d-flex justify-content-around" style="">
+        <div class="inCard">
+            <img src="plocha.png" width="125.38" height="125.38">
+        </div>
+        <div class="card-body cardTitleDiv">
+            <h5 class="card-title cardTitle" style="text-align:center">mytí venkovních ploch, chodníků, zámkových
+                dlažeb, venkovního nábytku aj.</h5>
+        </div>
+    </div>
+
 
 </div>
 
-<div class="d-flex justify-content-center align-items-center gardenHeader">
-    <h2 class="gardenHeader_">V oblasti údržby zahrady a zeleně nabízíme:</h2>
-</div>
-<div class="d-flex justify-content-center ">
-    <div class="border border-dark rounded-0 p-3 w-50 shadow-sm p-3 mb-5 bg-body rounded">
-        <div class="container d-block garden mb-4">
-
-            <ul>
-                <li><p>Sezónní údržba zahrady</p></li>
-                <li><p>Pravidelná údržba zahrady</p></li>
-            </ul>
-        </div>
-
-        <div class="garden2 container text-center ">
-            <p style="text-align:justify">Z konkrétních činností je to poté například: posekání, vyplení, přesazení,
-                hnojení, uhrabání či ořezání.</p>
-            <p style="text-align:justify">Dokážeme se postarat a opečovávat nejen zahrady domácností, ale také firemní
-                areály, dětská hřiště
-                či obecní prostranství. Dejte nám vědět a my pro Vás připravíme zcela individuální nabídku.</p>
-        </div>
-    </div>
-</div>
 <!-- Služby -->
 
 
 <!-- Balíčky -->
-<div class="d-flex justify-content-center align-items-center packageHeader">
-    <h2 class="packageHeader_">Vybrat si můžete z následujících úklidových balíčků:</h2>
+<div class="packages">
+    <div class="text-center">
+
+        <p class="cardHeader">Vybrat si můžete z následujících úklidových balíčků:
+        </p>
+
+    </div>
+
+    <div class="d-flex justify-content-around">
+        <div class="d-flex packages flex-wrap justify-content-around">
+
+            <div class="card rounded-0 package" style="width: 20rem;">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h5 class="card-title packageTitle">BASIC</h5>
+                        <small class="mb-0 fst-italic"> nejoblíbenější </small> <br>
+                        <small class="mb-0 fst-italic"> 2-4 hodiny</small>
+
+                    </div>
+                    <p class="card-text">
+                    <p class="fw-bold mb-1 text-center" style="font-size: 20px">již od 990 Kč*</p>
+                    <p class="m-0 addInfo text-center">Úklid BASIC zahrnuje:</p>
+                    <small class="mb-0" style="color: #DFE4EC"> - </small>
+                    <ul class="mt-1">
+                        <li class="bulletPoint">Vysávání a vytírání podlah v celé domácnosti vč. koberců</li>
+                        <li class="bulletPoint">Utírání prachu z volných ploch, vypínačů a obrázků</li>
+                        <li class="bulletPoint">Utírání pracovních ploch kuchyňské linky, leštění úchytek</li>
+                        <li class="bulletPoint">Umývání dřezu, baterie a utírání spotřebičů vč. digestoře</li>
+                        <li class="bulletPoint">Umývání a dezinfikování WC, umyvadla, sprchy a vany</li>
+                        <li class="bulletPoint">Leštění zrcadel</li>
+                        <li class="bulletPoint">Urovnávání a ustlání postelí</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card rounded-0 package" style="width: 20rem;">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h5 class="card-title packageTitle">GENERAL</h5>
+                        <small class="mb-0 fst-italic"> intenzivnější a detailnější úklid </small><br>
+                        <small class="mb-0 fst-italic"> 3-5 hodin</small>
+                    </div>
+                    <p class="card-text">
+                    <p class="fw-bold mb-1 text-center" style="font-size: 20px">již od 1 590 Kč*</p>
+                    <p class="mb-4 addInfo text-center">Úklid GENERAL zahrnuje:</p>
+
+                    <ul class="mt-1">
+                        <li class="bulletPoint">Vše co zahrnuje <p class="fw-bold" style="display:inline">BASIC</p></li>
+                        <li class="bulletPoint">Utírání prachu i z méně dostupných míst</li>
+                        <li class="bulletPoint">Detailnější umývání spotřebičů</li>
+                        <li class="bulletPoint">Umývání spodních částí sedacích souprav, jídelních stolů, židlí a
+                            dalších
+                        </li>
+                        <li class="bulletPoint">Umývání dveří, futer, zádveří</li>
+                        <li class="bulletPoint">Umývání teras a balkónů</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card rounded-0 package lastPackage" style="width: 20rem;">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h5 class="card-title packageTitle">INDIVIDUAL</h5>
+                        <small class="mb-0 fst-italic"> přesně dle Vašich potřeb </small> <br>
+                        <small class="mb-0" style="color: #DFE4EC"> - </small>
+                    </div>
+                    <p class="card-text">
+                    <p class="fw-bold mb-0 text-center" style="font-size: 18px">připravíme Vám nabídku na míru.</p>
+                    <p class="addInfo mb-4 text-center">INDIVIDUAL zahrnuje:</p>
+
+                    <ul class="mt-1">
+                        <li class="bulletPoint">Vše co zahrnuje <p class="fw-bold" style="display:inline">GENERAL</p>
+                        </li>
+                        <li>Slíbili jsme, že ke každé poptávce přistupujeme zcela
+                            individuálně dle Vašich požadavků.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card rounded-0 package lastPackage" style="width: 20rem;">
+                <div class="card-body">
+                    <div class="text-center">
+                        <h5 class="card-title packageTitle">OFFICE</h5>
+                        <small class="mb-0 fst-italic"> pravidelný úklid Vaší kanceláře </small> <br>
+                        <small class="mb-0" style="color: #DFE4EC"> - </small>
+                    </div>
+                    <p class="card-text">
+                    <p class="addInfo mb-4 text-center">Úklid OFFICE zahrnuje:</p>
+                    <p class="mb-0 text-center" style="color: #DFE4EC">-</p>
+
+                    <ul class="mt-1">
+                        <li class="bulletPoint">Vysávání a vytírání podlah v celé domácnosti vč. koberců</li>
+                        <li class="bulletPoint">Utírání prachu z volných ploch, vypínačů a obrázků</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <p class="addText mt-3 fst-italic">*v závislosti na podlahové ploše a pravidelnosti úklidu</p>
 </div>
+<!-- Balíčky -->
 
-<div class="d-flex justify-content-around">
-    <div class="d-flex wrap packages">
 
-        <div class="card border border-dark rounded-0 shadow-sm p-3 mb-5 bg-body rounded" style="width: 20rem;">
-            <div class="card-body">
-                <div class="text-center">
-                    <h5 class="card-title packageTitle">BASIC</h5>
-                    <small class="mb-0"> Nejoblíbenější </small> <br>
-                    <small class="mb-0"> 2-4 hodiny </small>
+<section class="gardenSection" style="background-color: white">
+    <div class="d-flex justify-content-center align-items-center gardenHeader pt-5">
+        <h5 class="gardenHeader_">V oblasti údržby <p class="fw-bold" style="display: inline">zahrady a zeleně </p>
+            nabízíme:
+        </h5>
+    </div>
+    <div class="d-flex justify-content-center ">
 
+        <div class="card text-center rounded-0 border-0 d-flex justify-content-around" style="">
+            <div class="d-flex justify-content-center">
+                <div class="inCard2">
+                    <img src="season.png" width="125.38" height="128.38">
                 </div>
-                <p class="card-text">
-                <p class="fw-bold mb-1">Cena již od 990 Kč</p>
-                <p class="m-0 addInfo fw-bold">Jedná se o jednorázový či pravidelný úklid:</p>
-                <ul class="mt-1">
-                    <li class="bulletPoint">Vysávání a vytírání podlah v celé domácnosti vč. koberců</li>
-                    <li class="bulletPoint">Utírání prachu z volných ploch, vypínačů a obrázků</li>
-                    <li class="bulletPoint">Utírání pracovních ploch kuchyňské linky, leštění úchytek</li>
-                    <li class="bulletPoint">Umývání dřezu, baterie a utírání spotřebičů vč. digestoře</li>
-                    <li class="bulletPoint">Umývání a dezinfikování WC, umyvadla, sprchy a vany</li>
-                    <li class="bulletPoint">Leštění zrcadel</li>
-                    <li class="bulletPoint">Urovnávání a ustlání postelí</li>
-                </ul>
-                </p>
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <h5 class="card-title cardTitle2" style="text-align:justify">sezónní údržba zahrady</h5>
             </div>
         </div>
 
-        <div class="card border border-dark rounded-0 shadow-sm p-3 mb-5 bg-body rounded" style="width: 20rem;">
-            <div class="card-body">
-                <div class="text-center">
-                    <h5 class="card-title packageTitle">GENERAL</h5>
-                    <small class="mb-0"> Intenzivnější a detailnější úklid </small><br>
-                    <small class="mb-0"> 3-5 hodin </small>
+        <div class="card text-center rounded-0 border-0 d-flex justify-content-around" style="">
+            <div class="d-flex justify-content-center">
+                <div class="inCard2">
+                    <img src="pavidelny.png" width="110.5" height="99.5">
                 </div>
-                <p class="card-text">
-                <p class="fw-bold mb-1">Cena od 1 590 Kč</p>
-                <p class="mb-4 addInfo fw-bold">Úklid GENERAL zahrnuje:</p>
-
-                <ul class="mt-1">
-                    <li class="bulletPoint">Vše co zahrnuje <p class="fw-bold" style="display:inline">BASIC</p></li>
-                    <li class="bulletPoint">Utírání prachu i z méně dostupných míst</li>
-                    <li class="bulletPoint">Detailnější umývání spotřebičů</li>
-                    <li class="bulletPoint">Umývání spodních částí sedacích souprav, jídelních stolů, židlí a dalších</li>
-                    <li class="bulletPoint">Umývání dveří, futer, zádveří</li>
-                    <li class="bulletPoint">Umývání teras a balkónů</li>
-                </ul>
-                </p>
+            </div>
+            <div class="card-body d-flex justify-content-center">
+                <h5 class="card-title cardTitle2 ms-2" style="text-align:justify">pravidelná údržba zahrady</h5>
             </div>
         </div>
 
-        <div class="card border border-dark rounded-0 shadow-sm p-3 mb-5 bg-body rounded" style="width: 20rem;">
-            <div class="card-body">
-                <div class="text-center">
-                    <h5 class="card-title packageTitle">INDIVIDUAL</h5>
-                    <small class="mb-0"> Přesně dle Vašich potřeb </small> <br>
-                    <small class="mb-0 text-white"> - </small>
-                </div>
-                <p class="card-text">
-                <p class="fw-bold mb-0">Připravíme Vám nabídku na míru.</p>
-                <p class="addInfo fw-bold mb-4">INDIVIDUAL zahrnuje:</p>
-
-                <ul class="mt-1">
-                    <li class="bulletPoint">Vše co zahrnuje <p class="fw-bold" style="display:inline">GENERAL</p></li>
-                    <li>Slíbili jsme, že ke každé poptávce přistupujeme zcela
-                        individuálně dle Vašich požadavků.</li>
-                </ul>
-                </p>
-            </div>
-        </div>
+        <div></div>
 
 
     </div>
-</div>
-<!-- Balíčky -->
+
+    <div class="btnDiv">
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#demo" aria-expanded="false"
+                aria-controls="demo">více informací <img class="ms-1 mb-1" src="arrow.png" height="12" width="12">
+        </button>
+        <div class="d-flex justify-content-around">
+            <div class="collapse text-start collapseDiv" id="demo">
+                <p style="text-align: justify">Z konkrétní činnosti je to pak například: posekání, vyplení, přesazení,
+                    hnojení, uhrabání či ořezání.</p>
+
+                <p style="text-align: justify">Dokážeme se postarat a opečovávat nejen zahrady domácností, ale také
+                    firemní areály, dětská hřiště či obecní protranství</p>
+                <p style="text-align: justify">Ceny v oblasti údržby zahrady a zeleně nastavujeme individuálně. </p><p><a href="contact.html" class="text-decoration-none text-black fw-bold fst-italic"> Dejte nám vědět </a>
+                    a my pro Vás přpravíme zcela individuální nabídku.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</section>
+
+
+<div style="padding: 4vh"></div>
 
 <div class="mt-5">
     <!-- Footer -->
-    <footer
-            class="text-center text-lg-start text-white "
-            style="background-color: #45526e"
-    >
+    <footer id="footer"
+            class="text-center text-lg-start" style="background-color: #1c2645">
         <div class="container p-4 pb-0">
             <!-- Section: Links -->
             <section class="">
                 <div class="row">
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">
-                            DH Services
+                        <h6 class="text-uppercase mb-4 font-weight-bold footerText footerHeader">
+                            D H&nbsp&nbspS E R V I C E S
                         </h6>
-                        <p>
-                            Naše společnost se zabývá dovozem aut ze zahraničí až k Vám domů. Také nabízíme úklidové
-                            služby.
+                        <p class="footerText">
+                            Naše společnost se specializuje na dovoz aut ze zahraničí a zároveň nabízíme úklidové služby
+                            nejvyšší kvality.
                         </p>
                     </div>
 
                     <hr class="w-100 clearfix d-md-none"/>
 
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Navigace</h6>
+                        <h6 class="text-uppercase mb-4 font-weight-bold footerText footerHeader">N A V I G A C E</h6>
                         <p>
-                            <a class="text-white m-0 text-decoration-none" href="home.html">Domovská stránka</a>
+                            <a class="text-white m-0 text-decoration-none footerText" href="#">Homepage</a>
                         </p>
                         <p>
-                            <a class="text-white m-0 text-decoration-none" href="cars.html">Dovoz aut</a>
+                            <a class="text-white m-0 text-decoration-none footerText" href="cars.html">Auta</a>
                         </p>
                         <p>
-                            <a class="text-white m-0 text-decoration-none" href="#">Úklid</a>
+                            <a class="text-white m-0 text-decoration-none footerText"
+                               href="cleaning.html">Nemovitosti</a>
                         </p>
                         <p>
-                            <a class="text-white m-0 text-decoration-none" href="about.html">O nás</a>
+                            <a class="text-white m-0 text-decoration-none footerText" href="about.html">O nás</a>
                         </p>
                     </div>
 
@@ -240,50 +340,47 @@
                     <hr class="w-100 clearfix d-md-none"/>
 
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Kontaktujte nás</h6>
-                        <p><a class="text-decoration-none m-0 text-white" target="_blank"
+                        <h6 class="text-uppercase mb-4 font-weight-bold footerText footerHeader">K O N T A K T U J T
+                            E&nbsp&nbspN Á S</h6>
+                        <p><a class="text-decoration-none m-0 footerText" target="_blank"
                               href="https://www.google.com/maps/place/Husovo+n%C3%A1m.+175%2F17,+289+22+Lys%C3%A1+nad+Labem/@50.2013307,14.8418981,17z/data=!3m1!4b1!4m6!3m5!1s0x470bf7bf23738c2b:0xd10c7f28e7fbf7e3!8m2!3d50.2013307!4d14.8418981!16s%2Fg%2F11cs7j76m_">Husovo
                             náměstí 175/17, 289 22</a></p>
-                        <p><a class="text-decoration-none m-0 text-white"
-                              href="mailto:info@absolut-estate.cz">info@absolut-estate.cz</a></p>
-                        <p><a class="text-decoration-none m-0 text-white" Href="tel:+420-607-753-698">+420
+                        <p><a class="text-decoration-none m-0 footerText"
+                              href="mailto:dhonzik@email.cz">dhonzik@email.cz</a></p>
+                        <p><a class="text-decoration-none m-0 footerText" Href="tel:+420-607-753-698">+420
                             607 753 698</a></p>
-                        <p><a class="m-0 text-white text-decoration-none" href="contact.html">Kontaktní formulář</a>
+                        <p><a class="m-0 text-decoration-none footerText" href="contact.html">Kontaktní formulář</a>
                         </p>
                     </div>
 
                 </div>
 
             </section>
+
+
             <!-- Section: Links -->
 
-            <hr class="my-3">
+            <hr class="my-3 footerText">
 
             <!-- Section: Copyright -->
             <section class="p-3 pt-0">
                 <div class="row d-flex align-items-center">
                     <div class="col-md-7 col-lg-8 text-center text-md-start">
                         <!-- Copyright -->
-                        <div class="p-3">© 2023 <a class="text-white editUnderline text-decoration-none editUnderline" href="home.html">DH
-                            Services</a></div>
+                        <div class="p-3 footerText footerHeader">© 2023 <a
+                                class="text-white text-decoration-none footerText footerHeader" href="home.html">DH
+                            Services</a> | IČ: 08361428</div>
                         <!-- Copyright -->
                     </div>
 
-                    <!-- Socials
                     <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
 
-                        <a class="btn btn-outline-light btn-floating m-1 icons"><i
+                        <a class="btn btn-outline-light btn-floating m-1 rounded-5 footerText facebook" href="https://www.facebook.com/dhimportcz" target="_blank"><i
                                 class="fab fa-facebook-f"></i></a>
 
-
-                        <a class="btn btn-outline-light btn-floating m-1 icons"><i
-                                class="fab fa-twitter"></i></a>
-
-
-                        <a class="btn btn-outline-light btn-floating m-1 icons"><i
+                        <a class="btn btn-outline-light btn-floating m-1 rounded-5 footerText facebook" href="https://instagram.com/dhimportcz?igshid=YmMyMTA2M2Y=" target="_blank"><i
                                 class="fab fa-instagram"></i></a>
                     </div>
-                    -->
                 </div>
             </section>
             <!-- Section: Copyright -->
@@ -292,6 +389,5 @@
     </footer>
 
 </div>
-
 </body>
 </html>

@@ -1,0 +1,242 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@font-face {
+  font-family: Trenda;
+  src: url("Trenda.ttf");
+}
+
+
+body {
+  background-color: #ebebee;
+  font-family: Trenda, serif;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  padding: 0;
+}
+
+.navbar a {
+  size: 20px;
+  margin: 10px;
+  color: white;
+  font-family: Trenda, serif;
+}
+
+.hoverNav {
+  position: relative;
+}
+
+.hoverNav::after {
+  opacity: 0;
+  transition: all 0.5s;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.facebook {
+  width: 4.5vh;
+}
+
+.hoverNav:hover::after {
+  opacity: 1;
+}
+
+.NAVHeader_ {
+  height: 30px;
+  width: 70px;
+}
+
+.aboutDiv_ {
+  height: 100vh;
+
+}
+
+.aboutDiv {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+  width: 50%;
+
+}
+
+
+.aboutTextHeading {
+  text-align: center;
+  width: 57%;
+  padding-top: 2vh
+}
+
+
+.aboutText {
+  color: #1c2645;
+  font-size: 15px;
+  font-family: Trenda, serif;
+  background-color: white;
+  padding-bottom: 5vh;
+  padding-top: 0;
+  padding-left: 5vh;
+  padding-right: 3vh;
+}
+
+.aboutTextPar {
+  font-size: 17px;
+}
+
+.aboutTextImg {
+  margin-left: 5vh;
+  margin-right: 0;
+
+}
+.aboutTextImgDiv {
+
+}
+
+.aboutTextImgDivMobile {
+  display: none;
+}
+
+h5 {
+  font-family: Trenda, serif;
+  color: #1c2645;
+  font-size: 35px;
+}
+
+.editUnderline {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 2px;
+}
+
+.editUnderline:hover {
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+
+.footerText {
+  color: #ebebee;
+}
+
+.footerHeader {
+  font-family: Trenda, serif;
+}
+
+.icons {
+  width: 11%;
+  transition: 1s;
+}
+
+.icons:hover {
+  content: '';
+  color: black;
+}
+
+
+@media screen and (max-width: 1580px) {
+
+  .NAVHeader_ {
+    height: 60px;
+    width: 140px;
+  }
+
+  .navIcon {
+    font-size: 35px;
+    background-color: transparent;
+    border: 0;
+  }
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .aboutTextHeading {
+    width: 100%;
+  }
+  .aboutDiv {
+    height: 80%;
+    width: 50%;
+  }
+
+  .aboutText {
+    padding: 5vh;
+  }
+
+
+  .aboutTextImgDiv {
+    display: none;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 450px) {
+  .aboutText {
+    color: #1c2645;
+    font-size: 15px;
+    font-family: Trenda, serif;
+    background-color: white;
+    height: 93%;
+  }
+
+  .aboutDiv {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-around;
+    height: 60%;
+    width: 90%;
+  }
+
+  .aboutTextPar {
+    width: 100%;
+    font-size: 17px;
+    padding-right: 0;
+  }
+
+  .aboutTextImgDivMobile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -160px;
+  }
+  .aboutTextImgMobile {
+
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .aboutDiv {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+    width: 90%;
+  }
+  .aboutTextImgDivMobile {
+    margin-top: 3vh;
+  }
+
+  .aboutText {
+    color: #1c2645;
+    font-size: 15px;
+    font-family: Trenda, serif;
+    background-color: white;
+    height: 100%;
+  }
+
+  .aboutTextImgDivMobile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+  }
+}

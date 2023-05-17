@@ -1,63 +1,89 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 @font-face {
   font-family: Trenda;
   src: url("Trenda.ttf");
 }
 
 body {
-  background-color: white;
+  background-color: #ebebee;
   font-family: Trenda, serif;
+  color: #1c2645;
 }
+
 .navbar {
-  width: 89%;
-  border-bottom: 0.5px solid #000000;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 9999;
+  padding: 0;
 }
+
 .navbar a {
   size: 20px;
   margin: 10px;
+  color: white;
+  font-family: Trenda, serif;
 }
 
 .hoverNav {
   position: relative;
 }
-.hoverNav::after{
+
+.hoverNav::after {
   opacity: 0;
   transition: all 0.5s;
   content: '';
   height: 1px;
   width: 100%;
-  background-color: black;
+  background-color: white;
   position: absolute;
   bottom: 0;
   left: 0;
 }
+
 .hoverNav:hover::after {
   opacity: 1;
 }
 
-.carsHeader {
+.NAVHeader_ {
+  height: 30px;
+  width: 70px;
+}
+
+.cleaningHeader {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-}
-.carsHeader_{
-  font-size: 50px;
-}
-.carsUnderline {
-  border-bottom: 2px solid black;
-  padding-bottom: 10px;
+  height: 93vh;
 }
 
-img{
+.cleaningHeader_ {
+  font-size: 50px;
+  font-family: Trenda, serif;
+  color: #1c2645;
+}
+
+.cleaningHeader_Price {
+  font-size: 20px;
+}
+
+.arrowDiv {
+  height: 12vh;
+}
+
+.card {
+  background-color: #ebebee;
+}
+
+img {
   z-index: 501;
 }
+
 .DHCard {
   height: 7rem;
 }
+
 .cardIcon2 {
   position: relative;
   bottom: 10px;
@@ -67,12 +93,366 @@ img{
   background-color: white;
   z-index: 500;
 }
-.DHList {
-  width: 65%;
+
+.spectrumDiv {
+  height: 30vh;
 }
+
+.DHListDiv {
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4vh;
+}
+
+.DHList {
+  width: 35%;
+}
+
 .point {
   font-size: 18px;
 }
+
+.facebook {
+  width: 4.5vh;
+}
+
+.procedure {
+  height: 70vh;
+}
+
+.procedureHeader {
+  padding-top: 4vh;
+  height: 15vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.procedureHeader_ {
+  height: 20%;
+  letter-spacing: 5px;
+}
+.bestChoice {
+  letter-spacing: 5px;
+}
+
+
+.procedureTextHeader {
+  font-size: 18px;
+}
+
+.procedureText {
+  width: 66%;
+  position: relative;
+  top: -11vh;
+  font-size: 17px;
+}
+
+.procedureText2 {
+  width: 100%;
+  position: relative;
+  top: -11vh;
+  font-size: 17px;
+}
+
+li {
+  list-style-type: circle;
+}
+
+.procedureImg {
+  z-index: 0;
+}
+
+.carGalleryHeader {
+  text-align: center;
+  height: 30vh;
+  padding-top: 8vh;
+  letter-spacing: 5px;
+}
+
+.carGalleryText {
+  font-size: 16px;
+  width: 20%;
+  padding-top: 3vh;
+  height: 10vh;
+  text-align: justify;
+  letter-spacing: 0 !important;
+}
+
+.carGallerySection {
+  padding-bottom: 6vh;
+}
+
+.carGalleryHeader2 {
+  text-align: center;
+  height: 30vh;
+  padding-top: 4vh;
+  width: 22%;
+  font-size: 18px;
+  font-weight: 260;
+}
+
+.carGalleryList {
+  height: 30vh;
+  padding-top: 4vh;
+  text-align: left;
+  font-size: 16px;
+}
+
+.imgText {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.carDiv {
+  margin-top: 3rem;
+}
+
+.carGalleryImg1 {
+  background-image: url("../../car4.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg1:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg2 {
+  background-image: url("../../car5.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg2:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg3 {
+  background-image: url("../../car6.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg3:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg4 {
+  background-image: url("../../car7.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg4:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg5 {
+  background-image: url("../../car8.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg5:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg6 {
+  background-image: url("../../car9.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg6:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg7 {
+  background-image: url("../../car10.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg7:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg8 {
+  background-image: url("../../car11.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg8:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg9 {
+  background-image: url("../../car12.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg9:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg10 {
+  background-image: url("../../car13.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg10:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg11 {
+  background-image: url("../../car14.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg11:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg12 {
+  background-image: url("../../car15.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg12:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg13 {
+  background-image: url("../../car16.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg13:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.carGalleryImg14 {
+  background-image: url("../../car17.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg14:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+
+.carGalleryImg15 {
+  background-image: url("../../car18.png");
+  height: 348px;
+  width: 427px;
+  background-color: #1c2645;
+  color: transparent;
+  background-size: 110%;
+}
+
+.carGalleryImg15:hover {
+  content: '';
+  transition: all 1s;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+
+
+
 .editUnderline {
   border-bottom: 1px solid #ffffff;
   padding-bottom: 2px;
@@ -81,4 +461,310 @@ img{
 .editUnderline:hover {
   color: white;
   border-bottom: 2px solid #ffffff;
+}
+
+.footerText {
+  color: #ebebee;
+}
+
+.footerHeader {
+  font-family: Trenda, serif;
+}
+
+.icons {
+  width: 11%;
+  transition: 1s;
+}
+
+.icons:hover {
+  content: '';
+  color: black;
+}
+
+.procedureDiv1 {
+  position: relative;
+  right: -120px;
+}
+
+.procedureDiv2 {
+  position: relative;
+  left: -100px;
+}
+
+.procedureTextDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dFlexSpaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+
+.procedureWidth {
+  width: 50%;
+}
+
+.tallDiv {
+  height: 250vh;
+}
+
+@media screen and (max-width: 1570px) {
+  .procedureSection {
+    height: 100vh;
+  }
+
+  .bestChoice {
+    padding-top: 20vh;
+  }
+
+  .spectrumDiv {
+    height: 60vh;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .bestChoice {
+    padding-top: 10vh;
+  }
+
+  .carGallerySection {
+    padding-bottom: 6vh;
+    margin-top: 30vh;
+  }
+
+  .NAVHeader_ {
+    height: 60px;
+    width: 140px;
+  }
+
+  .carDiv {
+    margin-top: 0rem;
+  }
+
+  .procedureImg {
+    position: relative;
+    right: -6vh;
+    bottom: -3vh;
+  }
+
+  .carGalleryText {
+    width: 80%;
+  }
+
+
+
+  .carGalleryImg1 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg2 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg3 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg4 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg5 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg6 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg7 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg8 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg9 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg10 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+  .carGalleryImg11 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+  .carGalleryImg12 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+  .carGalleryImg13 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+  .carGalleryImg14 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+  .carGalleryImg15 {
+    height: 261px;
+    width: 320.25px;
+    background-size: 100%;
+    margin: 3vh 3vh 3vh 3.5vh;
+  }
+
+
+  .carGalleryHeader2 {
+    width: 85%;
+  }
+
+  .tallDiv {
+    height: 541vh;
+    margin-left: 0.4vh;
+    padding-bottom: 10vh;
+  }
+
+  .dFlexSpaceAround {
+    display: block;
+  }
+
+  .procedureWidth {
+    width: 100%;
+  }
+
+  .procedureText2 {
+    width: 100%;
+    padding: 5vh;
+  }
+  .procedureText {
+    width: 100%;
+    padding: 5vh;
+  }
+
+  .procedureTextDiv {
+    display: block;
+  }
+  .procedureSection {
+    height: 235vh;
+  }
+
+  .procedureDiv1 {
+    position: unset;
+  }
+
+  .procedureDiv2 {
+    position: unset;
+  }
+
+
+  .navIcon {
+    font-size: 35px;
+    background-color: transparent;
+    border: 0;
+  }
+  .navbar a {
+    font-size: 20px;
+  }
+  .cleaningHeader_ {
+    font-size: 23px;
+  }
+  .cleaningHeader_Price {
+    font-size: 15px;
+  }
+  .DHList {
+    width: 80%;
+  }
+  .point {
+    font-size: 15px;
+  }
+  .bestChoice {
+    margin-top: 5rem;
+  }
+  .spectrumDiv {
+    height: 160vh;
+    padding-bottom: 8vh;
+  }
+  .spectrum {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .carGalleryHeader2 {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .tallDiv {
+    height: 680vh;
+    margin-left: -0.6vh;
+    padding-bottom: 10vh;
+  }
+
+  .carGalleryHeader2 h5 {
+    font-size: 14px;
+  }
+
+  .spectrumDiv {
+    height: 150vh;
+    padding-bottom: 8vh;
+  }
+  .bestChoice {
+    margin-top: 14rem;
+  }
+  .procedureSection {
+    height: 280vh;
+  }
+
+  .procedureImg {
+    position: relative;
+    right: -6vh;
+    bottom: -6vh;
+  }
+
 }

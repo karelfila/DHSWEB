@@ -11793,21 +11793,24 @@ textarea.form-control-lg {
   src: url("Trenda.ttf");
 }
 body {
-  background-color: white;
+  background-color: #ebebee;
   font-family: Trenda, serif;
+  color: #1c2645;
 }
 
 .navbar {
-  width: 89%;
-  border-bottom: 0.5px solid #000000;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 9999;
+  padding: 0;
 }
 
 .navbar a {
   size: 20px;
   margin: 10px;
+  color: white;
+  font-family: Trenda, serif;
 }
 
 .hoverNav {
@@ -11820,7 +11823,7 @@ body {
   content: "";
   height: 1px;
   width: 100%;
-  background-color: black;
+  background-color: white;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -11830,15 +11833,22 @@ body {
   opacity: 1;
 }
 
+.NAVHeader_ {
+  height: 30px;
+  width: 70px;
+}
+
 .cleaningHeader {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 93vh;
 }
 
 .cleaningHeader_ {
   font-size: 50px;
+  font-family: Trenda, serif;
+  color: #1c2645;
 }
 
 .cleaningHeaderUnderline {
@@ -11846,39 +11856,51 @@ body {
   padding-bottom: 10px;
 }
 
+.arrowDiv {
+  height: 12vh;
+}
+
 .cards {
-  gap: 6rem !important;
+  gap: 3rem !important;
+  width: 1140px;
+  justify-content: space-around;
 }
 
-img {
-  z-index: 501;
+.cardHeader {
+  font-size: 19px;
+  height: 13vh;
+  padding-top: 3vh;
 }
 
-.cardIcon {
-  position: relative;
-  bottom: 38px;
-  padding: 15px;
-  font-size: 25px;
-  width: 57px;
-  background-color: white;
-  z-index: 500;
+.cardTitle {
+  font-size: 17px;
+  width: 88%;
 }
 
-.cardIcon2 {
-  position: relative;
-  bottom: 38px;
-  padding-bottom: 15px;
-  padding-left: 14px;
-  padding-top: 15px;
-  padding-right: 16px;
-  font-size: 25px;
-  width: 57px;
-  background-color: white;
-  z-index: 500;
+.cardTitle2 {
+  font-size: 17px;
 }
 
-.card1 {
-  height: 195px;
+.cardTitleDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  height: 288px;
+  width: 18rem;
+}
+
+.inCard {
+  margin-top: 4vh;
+}
+
+.inCard2 {
+  margin-top: 4vh;
+  width: 125.38px;
+  height: 128.38px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .gardenHeader {
@@ -11891,6 +11913,10 @@ img {
 
 .gardeHeader_ {
   font-size: 35px;
+}
+
+.facebook {
+  width: 4.5vh;
 }
 
 .garden {
@@ -11921,7 +11947,22 @@ img {
 }
 
 .packages {
-  gap: 7rem;
+  gap: 2rem;
+}
+
+.package {
+  height: 100%;
+  border: 4px solid gray;
+  background-color: #DFE4EC;
+}
+
+.addText {
+  padding-top: 1vh;
+  padding-left: 29vh;
+}
+
+.gardenSection {
+  padding-bottom: 6vh;
 }
 
 .editUnderline {
@@ -11934,6 +11975,14 @@ img {
   border-bottom: 2px solid #ffffff;
 }
 
+.footerText {
+  color: #ebebee;
+}
+
+.footerHeader {
+  font-family: Trenda, serif;
+}
+
 .icons {
   width: 11%;
   transition: 1s;
@@ -11942,6 +11991,164 @@ img {
 .icons:hover {
   content: "";
   color: black;
+}
+
+.card-body {
+  margin-top: 1rem;
+}
+
+.spectrum {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.btnDiv {
+  text-align: center;
+}
+
+.collapseDiv {
+  font-family: Trenda, serif;
+  margin-top: 2rem;
+  width: 27%;
+}
+
+li {
+  list-style-type: circle;
+}
+
+@media screen and (max-width: 1680px) {
+  .package {
+    height: 60vh;
+    border: 4px solid gray;
+    background-color: #DFE4EC;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .facebook {
+    width: 4.5vh;
+  }
+
+  .cleaningHeader_ {
+    font-size: 20px;
+  }
+
+  .addText {
+    display: none;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .collapseDiv {
+    width: 75%;
+  }
+
+  .cleaningHeader_Price {
+    font-size: 15px;
+  }
+
+  .cardTitle {
+    font-size: 17px;
+  }
+
+  .cardTitle2 {
+    font-size: 12px;
+  }
+
+  .gardenHeader_ {
+    padding-left: 1vh;
+    padding-right: 1vh;
+    text-align: center;
+  }
+
+  .package {
+    height: 60vh;
+    border: 4px solid gray;
+    background-color: #DFE4EC;
+  }
+}
+@media screen and (max-width: 900px) {
+  .gardenSection {
+    margin-top: 25vh;
+    padding-bottom: 6vh;
+  }
+
+  .facebook {
+    width: 4.5vh;
+  }
+
+  .cardHeader {
+    height: 22vh;
+    padding-top: 12vh;
+  }
+
+  .package {
+    height: 65vh;
+  }
+
+  .packages {
+    height: 170vh;
+  }
+
+  .NAVHeader_ {
+    height: 60px;
+    width: 140px;
+  }
+
+  .navIcon {
+    font-size: 35px;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .infoCardMobile {
+    display: block;
+  }
+
+  .cards {
+    gap: 3rem !important;
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .chill {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .spectrum {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .lastPackage {
+    height: 65vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .packages {
+    height: 315vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .package {
+    height: 20%;
+  }
+
+  .packages {
+    height: 402vh;
+  }
 }
 
 /*# sourceMappingURL=cleaning.css.map */
